@@ -5,10 +5,10 @@ using std::string;
 //enumerators for different types of characters
 
 
-class Lexeme {
+class Character {
 
 public:
-	enum Token
+	enum Tokens
 	{
 		WHITE_SPACE,
 		NEW_LINE,
@@ -20,7 +20,32 @@ public:
 		STRING_QOUTE
 	};
 
+	Tokens token;
+	char c;
+	Character(char ch, Tokens t) {
+		token = t;
+		c = ch;
+	}
+};
+
+class Lexeme {
+public:
+	enum Token
+	{
+		//name of a var
+		IDENTIFIER,
+		//name of a reserved word (if, for, return, etc)
+		KEYWORD,
+		//{, (, ;,
+		SEPARATOR,
+		//+ = <
+		OPERATOR,
+		// this
+		COMMENT,
+		//true, 7.23f, "word"
+		LITERAL
+	};
+
 	string data;
 	Token cat;
-
 };

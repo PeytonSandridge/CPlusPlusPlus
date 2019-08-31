@@ -1,0 +1,28 @@
+﻿  Lexer.cpp
+C:\Users\peyto\source\repos\CPlusPlusPlus\Lexer\Lexer\Lexer.cpp(41,34): error C3867:  'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::length': non-standard syntax; use '&' to create a pointer to member
+C:\Users\peyto\source\repos\CPlusPlusPlus\Lexer\Lexer\Lexer.cpp(41,34): error C2446:  '<': no conversion from 'unsigned int (__thiscall std::basic_string<char,std::char_traits<char>,std::allocator<char>>::* )(void) noexcept const' to 'int'
+  Test.cpp
+C:\Users\peyto\source\repos\CPlusPlusPlus\Lexer\Lexer\Lexer.cpp(41,28): message :  There is no context in which this conversion is possible
+C:\Users\peyto\source\repos\CPlusPlusPlus\Lexer\Lexer\Test.cpp(9,1): warning C4129:  '	': unrecognized character escape sequence
+C:\Users\peyto\source\repos\CPlusPlusPlus\Lexer\Lexer\Test.cpp(12,54): error C2440:  'initializing': cannot convert from 'std::vector<Character *,std::allocator<_Ty>>' to 'std::vector<Character,std::allocator<_Ty>>'
+C:\Users\peyto\source\repos\CPlusPlusPlus\Lexer\Lexer\Test.cpp(12,54): error C2440:         with
+C:\Users\peyto\source\repos\CPlusPlusPlus\Lexer\Lexer\Test.cpp(12,54): error C2440:         [
+C:\Users\peyto\source\repos\CPlusPlusPlus\Lexer\Lexer\Test.cpp(12,54): error C2440:             _Ty=Character *
+C:\Users\peyto\source\repos\CPlusPlusPlus\Lexer\Lexer\Test.cpp(12,54): error C2440:         ]
+C:\Users\peyto\source\repos\CPlusPlusPlus\Lexer\Lexer\Test.cpp(12,54): error C2440:         and
+C:\Users\peyto\source\repos\CPlusPlusPlus\Lexer\Lexer\Test.cpp(12,54): error C2440:         [
+C:\Users\peyto\source\repos\CPlusPlusPlus\Lexer\Lexer\Test.cpp(12,54): error C2440:             _Ty=Character
+C:\Users\peyto\source\repos\CPlusPlusPlus\Lexer\Lexer\Test.cpp(12,54): error C2440:         ]
+C:\Users\peyto\source\repos\CPlusPlusPlus\Lexer\Lexer\Test.cpp(12,30): message :  No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+C:\Users\peyto\source\repos\CPlusPlusPlus\Lexer\Lexer\Test.cpp(14,36): error C3867:  'std::vector<Character,std::allocator<_Ty>>::size': non-standard syntax; use '&' to create a pointer to member
+C:\Users\peyto\source\repos\CPlusPlusPlus\Lexer\Lexer\Test.cpp(14,36): error C3867:         with
+C:\Users\peyto\source\repos\CPlusPlusPlus\Lexer\Lexer\Test.cpp(14,36): error C3867:         [
+C:\Users\peyto\source\repos\CPlusPlusPlus\Lexer\Lexer\Test.cpp(14,36): error C3867:             _Ty=Character
+C:\Users\peyto\source\repos\CPlusPlusPlus\Lexer\Lexer\Test.cpp(14,36): error C3867:         ]
+C:\Users\peyto\source\repos\CPlusPlusPlus\Lexer\Lexer\Test.cpp(14,36): error C2446:  '<': no conversion from 'unsigned int (__thiscall std::vector<Character,std::allocator<_Ty>>::* )(void) noexcept const' to 'int'
+C:\Users\peyto\source\repos\CPlusPlusPlus\Lexer\Lexer\Test.cpp(14,36): error C2446:         with
+C:\Users\peyto\source\repos\CPlusPlusPlus\Lexer\Lexer\Test.cpp(14,36): error C2446:         [
+C:\Users\peyto\source\repos\CPlusPlusPlus\Lexer\Lexer\Test.cpp(14,36): error C2446:             _Ty=Character
+C:\Users\peyto\source\repos\CPlusPlusPlus\Lexer\Lexer\Test.cpp(14,36): error C2446:         ]
+  Generating Code...
+C:\Users\peyto\source\repos\CPlusPlusPlus\Lexer\Lexer\Test.cpp(14,32): message :  There is no context in which this conversion is possible

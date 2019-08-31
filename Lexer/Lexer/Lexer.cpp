@@ -1,32 +1,32 @@
 #include "Lexer.h"
 void Lexer::setUp() {
 	//identifies space and tab as WHITESPACE
-	tokens[' '] = Lexeme::WHITE_SPACE;
-	tokens['\t'] = Lexeme::WHITE_SPACE;
+	tokenDef[' '] = Character::WHITE_SPACE;
+	tokenDef['\t'] = Character::WHITE_SPACE;
 
 	//identifies new line
-	tokens['\n'] = Lexeme::NEW_LINE;
+	tokenDef['\n'] = Character::NEW_LINE;
 
 	//sets type of letters to LETTER
 	for (char i = 'a'; i <= 'z'; i++) {
-		tokens[i] = Lexeme::LETTER;
+		tokenDef[i] = Character::LETTER;
 	}
 
 	for (int i = 0; i <= 9; i++) {
-		tokens[i] = Lexeme::NUMBER;
+		tokenDef[i] = Character::NUMBER;
 	}
 
-	tokens['|'] = Lexeme::COMMENT;
+	tokenDef['|'] = Character::COMMENT;
 
-	tokens['\''] = Lexeme::CHAR_QOUTE;
+	tokenDef['\''] = Character::CHAR_QOUTE;
 
-	tokens['#'] = Lexeme::STRING_QOUTE;
+	tokenDef['#'] = Character::STRING_QOUTE;
 
-	tokens['-'] = Lexeme::OPERATOR;
-	tokens['+'] = Lexeme::OPERATOR;
-	tokens['*'] = Lexeme::OPERATOR;
-	tokens['/'] = Lexeme::OPERATOR;
-	tokens['='] = Lexeme::OPERATOR;
+	tokenDef['-'] = Character::OPERATOR;
+	tokenDef['+'] = Character::OPERATOR;
+	tokenDef['*'] = Character::OPERATOR;
+	tokenDef['/'] = Character::OPERATOR;
+	tokenDef['='] = Character::OPERATOR;
 
 }
 
@@ -34,5 +34,21 @@ Lexer::Lexer(string code){
 	input = code;
 	setUp();
 }
+
+vector<Character*> Lexer::getCharacterTokens() {
+	vector<Character*> tokenVect;
+
+	for (int i = 0; i < input.length; i++) {
+		tokenVect.push_back(new Character(input[i], tokenDef[input[i]]));
+	}
+
+	return tokenVect;
+}
+
+vector<Lexeme> Lexer::getLexemes()
+{
+	return vector<Lexeme>();
+}
+
 
 
