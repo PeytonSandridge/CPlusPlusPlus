@@ -11,16 +11,21 @@ using std::vector;
 //using std::Token;
 
 
+
+
 class Lexer {
 public:
 	Lexer(string code);
-	vector<Character*> getCharacterTokens();
+	Lexer();
+	vector<Character> getCharacterTokens();
 	vector<Lexeme> getLexemes();
-private:
 	string input;
+private:
+
 	void setUp();
 
 	unordered_map<char, Character::Tokens> tokenDef;
+	unordered_map<string, Lexeme::Token> lexemeDef;
 };
 
 

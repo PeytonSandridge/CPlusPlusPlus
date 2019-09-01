@@ -45,7 +45,10 @@ public:
 		//true, 7.23f, "word"
 		LITERAL
 	};
-
 	string data;
 	Token cat;
+	Lexeme(string iData, Token iCat) {
+		data = iData;
+		cat = iCat;
+	}
 };
