@@ -11,13 +11,9 @@ public:
 	enum Tokens
 	{
 		WHITE_SPACE,
-		NEW_LINE,
 		LETTER,
-		NUMBER,
 		OPERATOR,
 		COMMENT,
-		CHAR_QOUTE,
-		STRING_QOUTE
 	};
 
 	Tokens token;
@@ -43,7 +39,9 @@ public:
 		// this
 		COMMENT,
 		//true, 7.23f, "word"
-		LITERAL
+		LITERAL,
+		//An error or mistype
+		UNKNOWN
 	};
 	string data;
 	Token cat;

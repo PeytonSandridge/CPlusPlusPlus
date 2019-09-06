@@ -15,10 +15,11 @@ using std::vector;
 
 class Lexer {
 public:
-	Lexer(string code);
+	inline Lexer(string code);
 	Lexer();
-	vector<Character> getCharacterTokens();
-	vector<Lexeme> getLexemes();
+	inline vector<Character> getCharacterTokens();
+	inline vector<string> getWords();
+	inline vector<Lexeme> getLexemes();
 	string input;
 private:
 
